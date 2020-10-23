@@ -1,5 +1,0 @@
-gunicorn
-numpy
-opencv-python
-Flask==1.1.1
-pytesseract==0.3.0
