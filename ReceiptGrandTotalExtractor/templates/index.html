@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Receipt Grand Total Extractor</title>
+  </head>
+  <body>
+    <h1>Receipt Grand Total Extractor</h1>
+    <h3>Made by: YoungWoong Cho</h3>
+    <h4>MEng major, CS minor in The Cooper Union<br>
+    https://github.com/YoungWoong-Cho</h4>
+    <p> Please upload an image of receipt. OCR will extract the <strong>Grand Total</strong> from the image. <br>
+        <strong>Note</strong>: The image must be clear and contain texts only for the best result.<br>
+        <strong>Note2</strong>: It would be IMPOSSIBLE to extract the grand total if the receipt does not contain $(dollar sign) in it.<br><br>
+    </p>
+    <form method="POST" action="" enctype="multipart/form-data">
+      <p><input type="file" name="file"></p>
+
+      <p><input type="submit" name="button" value="Extract"></p>
+      <p>{{text}}</p>
+    
+      <p><input type="submit" name="button" value="Try sample receipt"></p>
+
+      <img src="/static/sampleReceipt.jpg" width="400">
+    </form>
+  </body>
+</html>
